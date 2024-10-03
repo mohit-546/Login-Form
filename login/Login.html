@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="New 1.css" />
+    <script>
+      function abc() {
+        user = "tripathimohit546@gmail.com";
+        pass = "Mohit@546";
+        var a, b;
+        a = document.getElementById("x").value;
+        b = document.getElementById("y").value;
+        if (a == user) {
+          if (b == pass) {
+            // alert("you are welcome");
+            window.open("dashboard.html");
+          } else {
+            alert("your password is not valid");
+          }
+        } else {
+          alert("your user name is not valid");
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="main">
+      <header>
+        <div class="navbar">
+          <div class="icon">
+            <h2 class="logo">CYBER_TECH</h2>
+          </div>
+          <nav class="menu">
+            <ul>
+              <li>
+                <a href="file:///C:/Users/Asus/Desktop/website/New.html"
+                  >HOME</a
+                >
+              </li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">SERVICE</a></li>
+              <li><a href="#">DESIGN</a></li>
+              <li><a href="https://wa.me/9369812153">CONTACT</a></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <input class="srch" type="search" placeholder="Type To text" />
+            <button class="btn" onclick="performSearch()">Search</button>
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <h1>Web Design & <br /><span>Development</span> <br />Course</h1>
+        <p class="par">
+          Cybertech institute providing you a full digital classes for front-end
+          and back-end developers
+          <br />
+          in very low fee affordable course and free to learn cybersecurity
+          <br />
+          Cybertech administrator Mr. Tripathi
+        </p>
+        <button class="cn">
+          <a
+            href="https://www.instagram.com/_iiam._._mohiiit_.01?igsh=eG1mM3oxc3g3bjli"
+            >JOIN US</a
+          >
+        </button>
+        <div class="form">
+          <h2>Login Here</h2>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter Your Email"
+            id="x"
+            required
+          />
+          <input
+            type="password"
+            name="pass"
+            placeholder="Enter Your Password"
+            id="y"
+            required
+          />
+          <button class="btnn" onclick="abc()">Log in</button>
+          <p class="link">
+            Don't have an account?<br />
+            <a href="https://accounts.google.com/lifecycle/steps/signup/name"
+              >Sign up</a
+            >
+            here
+          </p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
